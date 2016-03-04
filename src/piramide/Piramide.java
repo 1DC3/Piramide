@@ -20,9 +20,24 @@ public class Piramide {
         }
         System.out.println();
     }
+    
+    public static void Dch(int h){
+        for(int i=0; i<h; i++){
+            System.out.println();
+            for(int j=0; j<h-i-1; j++){
+                System.out.printf("%c",' ');
+            }
+            for(int k=h; k>h-i-1; k--){
+                System.out.print("*");
+            }
+        }
+        System.out.println();
+    }
+    
     public static void main(String[] args) {
         final int ALTURA = 5;
         Piramide.Izq(ALTURA);
+        Piramide.Dch(ALTURA);
     }
     
 }
